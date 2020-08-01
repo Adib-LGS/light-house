@@ -9,9 +9,9 @@
     <div class="mt-3">
         <button class="btn btn-danger" wire:click="off">Off</button>
    
-        <button class="btn btn-secondary" wire:click="plus">+</button>
+        <button class="btn btn-secondary" wire:click="plus" @if($brightness >= 100) disabled @endif>+</button>
    
-        <button class="btn btn-secondary" wire:click="miness">-</button>
+        <button class="btn btn-secondary" wire:click="miness" @if($brightness <= 0) disabled @endif>-</button>
     
         <button class="btn btn-primary" wire:click="on">On</button>
     </div>
