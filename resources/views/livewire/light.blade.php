@@ -7,12 +7,12 @@
     </div>
 
     <div class="mt-3">
-        <button class="btn btn-danger">Off</button>
+        <button class="btn btn-danger" wire:click="off">Off</button>
    
-        <button class="btn btn-secondary">-</button>
+        <button class="btn btn-secondary" wire:click="plus">+</button>
    
-        <button class="btn btn-secondary">+</button>
+        <button class="btn btn-secondary" wire:click="miness">-</button>
     
-        <button class="btn btn-primary">On</button>
+        <button class="btn btn-primary" wire:click="on">On</button>
     </div>
 </div>
